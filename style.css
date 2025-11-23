@@ -1,0 +1,158 @@
+
+html, body{
+	font-family: Helvetica;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+}
+
+
+header{
+	display: flex;
+    justify-content: space-between; /* p a la izquierda, ul a la derecha */
+	align-items: center;            /* alinea ambos a la misma altura */
+    padding: 10px;
+	border-bottom: 1px solid seashell;
+	margin: 0px;
+	height: 69px;
+	position: fixed;
+	top: 0;
+	width: 95%;
+	background-color: black;
+	z-index: 9999;
+}
+.logo{
+	font-family: "Old English", serif;
+	font-size: 50px;
+	}
+	
+.menu {
+    list-style: none;  /* quita los puntos */
+    display: flex;     /* pone los <li> en línea */
+    gap: 20px;         /* separa cada elemento */
+    margin: 0;
+    padding: 0;
+	font-size: 20px;
+	text-decoration: underline;
+}
+.imagen {
+	position: relative; /* neesario para poner el texto dentro de la imagen*/
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    margin-top: 100px; /* para que no quede detrás del header */
+	margin-left: 50px;
+	width: 1200px; /*calc(100% - 100px);*/ /* Restamos el margen */
+	height: 700px;
+	overflow: hidden; /* evita que nada se salga*/
+}
+ .mission {
+    position: absolute;
+    top: 50%;                   /* centrado vertical */
+    left: 0;                    /* empieza desde el borde izquierdo */
+    width: 100%;                /* ocupa todo el ancho de la imagen */
+    transform: translateY(-50%);/* centra verticalmente sin mover horizontal */
+    text-align: center;         /* centra el texto */
+    background-color: black; /* fondo negro semitransparente */
+    padding: 20px 0;            /* espacio arriba y abajo */
+}
+
+
+.mission h2,.mission h4 {
+    margin: 10px 0;
+}
+.tea_month{
+	position: relative;
+	margin-top: 75px;
+	
+}
+
+.tea_month h2, .tea_month h4{
+	text-align: center;
+}
+.galery{
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto; /* centro la galería */
+}
+.galery .item {
+    text-align: center;
+}
+.galery a {
+    display: block;   /* 👈 Esto pone el texto debajo */
+    margin-top: 10px;
+}
+.galery img{
+	width: 300px;
+	height: 200px;
+	object-fit: cover; /*evita deformaciones */
+	
+}
+.locations .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.locations img {
+    width: 1200px;
+    height: 500px;
+    display: block;
+}
+
+.locations .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centra vertical y horizontal */
+    text-align: center;
+    color: seashell;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.locations .overlay h2 {
+    margin-bottom: 20px;
+    color: seashell;
+    background-color: rgba(0,0,0,0.6); /* opcional: fondo semitransparente */
+    display: inline-block;
+    padding: 10px 20px;
+	border-radius: 8px;
+    
+}
+
+.locations .overlay .adress {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* responsive: saltan a otra fila si hace falta */
+    margin-top: 20px;
+}
+
+.locations .overlay .adress .card {
+    background-color: black; /* fondo semitransparente */
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+	line-height: 2.5;
+	border-radius: 8px;
+	
+}
+
+.locations .overlay .adress .card p {
+    margin: 0;
+    color: seashell;
+}
+.footer{
+	display: block;
+	text-align:center;
+	height: 200px;
+}
+p.copyright{
+	text-align: left;
+}
